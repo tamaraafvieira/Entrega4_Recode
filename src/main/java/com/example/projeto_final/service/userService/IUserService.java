@@ -1,7 +1,6 @@
-package com.example.projeto_final_sq58.service.userService;
+package com.example.projeto_final.service.userService;
 
-import com.example.projeto_final_sq58.model.Login;
-import com.example.projeto_final_sq58.model.User;
+import com.example.projeto_final.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,5 +15,4 @@ public interface IUserService {
 
     public void deleteUser(Integer id);
 
-    public User getUserByEmailAndPassword(Login login);
 }

@@ -1,13 +1,13 @@
-package com.example.projeto_final_sq58;
+package com.example.projeto_final;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProjetoFinalSq58Application {
+public class ProjetoFinalApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjetoFinalSq58Application.class, args);
+		SpringApplication.run(ProjetoFinalApplication.class, args);
 	}
 
 }

@@ -1,18 +1,14 @@
-package com.example.projeto_final_sq58.controller;
+package com.example.projeto_final.controller;
 
-import com.example.projeto_final_sq58.model.Login;
-import com.example.projeto_final_sq58.model.User;
-import com.example.projeto_final_sq58.service.userService.UserService;
+import com.example.projeto_final.model.User;
+import com.example.projeto_final.service.userService.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.NoSuchElementException;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
     @Autowired
     private UserService userService;
@@ -24,11 +20,6 @@ public class UserController {
     @PostMapping(path = "/register")
     public void register(@RequestBody User user){
         userService.saveUser(user);
-    }
-
-    @PostMapping(path = "/login")
-    public User login(@RequestBody Login login){
-        return userService.getUserByEmailAndPassword(login);
     }
 
     @PutMapping(path = "/update/{id}")
@@ -51,7 +42,6 @@ public class UserController {
         userService.deleteUser(id);
 
     }
-
 }
 
 

@@ -1,13 +1,13 @@
-package com.example.projeto_final_sq58;
+package com.example.projeto_final;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProjetoFinalSq58ApplicationTests {
+class ProjetoFinalApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

@@ -1,8 +1,7 @@
-package com.example.projeto_final_sq58.service.userService;
+package com.example.projeto_final.service.userService;
 
-import com.example.projeto_final_sq58.model.Login;
-import com.example.projeto_final_sq58.model.User;
-import com.example.projeto_final_sq58.repository.UserRepository;
+import com.example.projeto_final.model.User;
+import com.example.projeto_final.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,8 +37,4 @@ public class UserService implements IUserService{
         userRepository.deleteById(id);
     }
 
-    @Override
-    public User getUserByEmailAndPassword(Login login){
-        return userRepository.getUserByEmailAndPassword(login.getEmail(), login.getPassword());
-    }
 }
